@@ -1,0 +1,3 @@
+<ng-container *ngFor="let post of (blogPosts$ | async)">
+  <app-blog-post [blogPost]="post"></app-blog-post>
+</ng-container>
