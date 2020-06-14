@@ -1,0 +1,47 @@
+@import "../../colour-variables.scss";
+
+nav {
+  height: 120px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.cons {
+  color: white;
+  font-family: 'Revive80-WideOutline', Helvetica, Arial, Sans-Serif;
+  font-size: 48px;
+  text-decoration: none;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.wang {
+  color: $lava-light;
+  font-family: 'Revive80-Signature', Helvetica, Arial, Sans-Serif;
+  font-size: 81px;
+  text-decoration: none;
+}
+
+.navLinkItem {
+  font-family: 'Revive80-Tall', Helvetica, Arial, Sans-Serif;
+  font-size: 64px;
+  color: $lava-light;
+  text-shadow: 0 0 10px $lava-light, 0 0 20px $lava-blue, 0 0 40px $lava-blue;
+  text-decoration: none;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.navLink {
+  float: right;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px $lava-yellow, 0 0 30px $lava-yellow, 0 0 40px $lava-orange, 0 0 70px $lava-orange, 0 0 80px $lava-red, 0 0 100px $lava-red, 0 0 150px $lava-red;
+  }
+  to {
+    text-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px $lava-yellow, 0 0 10px $lava-yellow, 0 0 15px $lava-orange, 0 0 20px $lava-orange, 0 0 30px $lava-red, 0 0 50px $lava-red, 0 0 75px $lava-red;
+  }
+}
