@@ -1,0 +1,36 @@
+// global colour variables
+$lava-ash: #01051E;
+$lava-medium-ash: #212438;
+$lava-light: #BFC5E8;
+$lava-blue: #01436C;
+$lava-smoke: #6F5180;
+$lava-pink: #EA5C58;
+$lava-red: #D91100;
+$lava-orange: #FE3F00;
+$lava-yellow: #FFA007;
+
+// neon stuff
+
+@-webkit-keyframes neonRed {
+  from {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px $lava-yellow, 0 0 30px $lava-yellow, 0 0 40px $lava-orange, 0 0 70px $lava-orange, 0 0 80px $lava-red, 0 0 100px $lava-red, 0 0 150px $lava-red;
+  }
+  to {
+    text-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px $lava-yellow, 0 0 10px $lava-yellow, 0 0 15px $lava-orange, 0 0 20px $lava-orange, 0 0 30px $lava-red, 0 0 50px $lava-red, 0 0 75px $lava-red;
+  }
+}
+
+@-webkit-keyframes neonYellow {
+  from {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 30px white, 0 0 40px white, 0 0 70px $lava-yellow, 0 0 80px $lava-yellow, 0 0 100px $lava-yellow, 0 0 150px $lava-yellow;
+  }
+  to {
+    text-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px white, 0 0 10px white, 0 0 15px white, 0 0 20px yellow, 0 0 30px yellow, 0 0 50px yellow, 0 0 75px yellow;
+  }
+}
+
+// breakpoints
+
+$small: 600px;
+$medium: 900px;
+$large: 1200px;

@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
+  showNav: boolean;
 
-  constructor() { }
+  constructor() {
+    this.showNav = false;
+  }
 
   ngOnInit(): void {
+  }
+
+  toggleNav(): void {
+    this.showNav = !this.showNav;
+    console.log(this.showNav);
   }
 
 }

@@ -28,6 +28,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "src/reset.css",
               "src/assets/fonts/fonts.css"
             ],
             "scripts": []
