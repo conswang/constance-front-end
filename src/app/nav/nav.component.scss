@@ -2,17 +2,13 @@
 
 // NAV ICON CSS - copied from https://codepen.io/designcouch/pen/Atyop
 
-.navIconWrapper {
-  height: 61px;
-  position: sticky;
-  z-index: 2;
-}
-
 #navIcon {
   width: 60px;
   height: 45px;
-  margin: 16px 16px 0 0;
-  float: right;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -142,5 +138,16 @@
       }
     }
     
+  }
+}
+
+// also make hamburger and h2 smaller for very small phones
+@media only screen and (max-width: $xsmall) {
+
+  #navIcon{
+    zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
   }
 }

@@ -1,8 +1,14 @@
+@import "./reset.css";
 @import "./variables.scss";
+@import "./assets/fonts/fonts.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-/*-----Prevents iPhone from resizing in landscape mode -----*/
-html {-webkit-text-size-adjust: none; }
+html {
+  /*-----Prevents iPhone from resizing in landscape mode -----*/
+  -webkit-text-size-adjust: none; 
+  scroll-behavior: smooth;
+}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  }
@@ -16,16 +22,36 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 96px;
+  font-size: 64px;
   line-height: 112px;
-  text-align: center;  
+  text-align: center;
+  
+  @media only screen and (max-width: $large) {
+    font-size: 64px;
+    line-height: 120px;
+  }
+
+  @media only screen and (max-width: $small) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  @media only screen and (max-width: $xsmall) {
+    font-size: 42px;
+  }
 }
 
-p {
-  color: $lava-ash;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
+a {
+  color: $lava-magenta;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+a:hover, a:visited:hover {
+  color: $lava-pink;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $lava-red;
 }

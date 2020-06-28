@@ -1,0 +1,125 @@
+@import '../../../variables.scss';
+
+.aboutWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.aboutContent {
+  padding: 0 15%;
+}
+
+.greeting, p {
+  color: $lava-ash;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: .25em 0;
+}
+
+.greeting {
+  font-style: italic;
+  font-size: 48px;
+  line-height: 65px;
+}
+
+p {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 49px;
+}
+
+.resume {
+  background-color: $lava-ash;
+  border: none;
+  outline: none;
+  color: $lava-light;
+  padding: 16px 32px;
+  border-radius: 45px;
+  margin: .6em 0;
+  transition: 0.5s;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.resume:hover, .resume:active {
+  background-color: $lava-pink;
+  color: $lava-ash;
+  cursor: pointer;
+}
+
+.buttonLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+::ng-deep svg {
+  height: 64px;
+  width: 64px;
+  margin-right: 16px;
+  :nth-last-child(1) {
+    margin-right: 0;
+  }
+  fill: $lava-ash;
+  transition: 0.5s;
+}
+
+::ng-deep svg:hover, ::ng-deep svg:active {
+  fill: $lava-pink;
+}
+
+@media only screen and (max-width: $large) {
+
+  .greeting {
+    font-size: 36px;
+    line-height: 49px;
+    margin: .5em 0;
+  }
+
+  p {
+    font-size: 32px;
+    line-height: 44px;
+    margin: .5em 0;
+  }
+}
+
+@media only screen and (max-width: $small) {
+  .aboutContent {
+    padding: 0 10%;
+  }
+
+  .greeting {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .resume {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 8px 16px;
+  }
+
+  ::ng-deep svg {
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+    :nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+}

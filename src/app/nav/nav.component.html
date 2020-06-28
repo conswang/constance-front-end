@@ -1,26 +1,24 @@
-<div class="navIconWrapper">
-  <div id="navIcon"
-    (click)="toggleNav()"
-    [ngClass]="{ open: showNav }">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+<div id="navIcon"
+  (click)="toggleNav()"
+  [ngClass]="{ open: showNav }">
+  <span></span>
+  <span></span>
+  <span></span>
 </div>
 <div class="navWrapper" [ngClass]="{ overlay: showNav }">
   <nav>
     <ul>
       <li>
-        <a href="#home">HOME</a>
+        <a href="#home" (click)="toggleNav()">HOME</a>
       </li>
       <li>
-        <a href="#about">ABOUT</a>
+        <a href="#about" (click)="toggleNav()">ABOUT</a>
       </li>
       <li>
-        <a href="#projects">PROJECTS</a>
+        <a href="#projects" (click)="toggleNav()">PROJECTS</a>
       </li>
       <li>
-        <a routerLink="/blog">BLOG</a>
+        <a routerLink="/blog" (click)="toggleNav()">BLOG</a>
       </li>
     </ul>
   </nav>
