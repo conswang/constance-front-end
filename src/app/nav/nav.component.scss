@@ -128,7 +128,7 @@
     }
 
     // phone resizes text and lays out text vertically like tablet
-    @media only screen and (max-width: $small) {
+    @media only screen and (max-width: $small), (max-width: $medium) and (orientation: landscape) {
       padding: 8px;
       
       a {
@@ -142,12 +142,12 @@
 }
 
 // also make hamburger and h2 smaller for very small phones
-@media only screen and (max-width: $xsmall) {
+@media only screen and (max-width: $xsmall), (max-width: $medium) and (orientation: landscape) {
 
   #navIcon{
-    zoom: 0.75;
-    -moz-transform: scale(0.75);
-    -webkit-transform: scale(0.75);
-    transform: scale(0.75);
+    zoom: 0.85;
+    -moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
   }
 }

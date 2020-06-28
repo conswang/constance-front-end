@@ -93,7 +93,7 @@ p {
   }
 }
 
-@media only screen and (max-width: $small) {
+@media only screen and (max-width: $small), (max-width: $medium) and (orientation: landscape) {
   .aboutContent {
     padding: 0 10%;
   }
@@ -101,6 +101,7 @@ p {
   .greeting {
     font-size: 24px;
     line-height: 36px;
+    margin: 0.3em 0;
   }
 
   p {
@@ -121,5 +122,12 @@ p {
     :nth-last-child(1) {
       margin-right: 0;
     }
+  }
+}
+
+@media only screen and (max-width: $medium) and (orientation: landscape) {
+  // allow about section to overflow in landscape mobile
+  .aboutWrapper {
+    height: 100%;
   }
 }
