@@ -146,19 +146,21 @@
   }
 }
 
-a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: .06em;
-  background-image: linear-gradient(to right, $lava-red, $lava-yellow);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
+@media not all and (hover: none) {
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: .06em;
+    background-image: linear-gradient(to right, $lava-red, $lava-yellow);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 }
 
 // also make hamburger and h2 smaller for very small phones
