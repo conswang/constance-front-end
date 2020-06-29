@@ -13,23 +13,6 @@ html {
 /*----------- apply a natural box layout model to all elements --------------*/
 * {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  }
 
-body {
-  background-color: $lava-light;
-  background-image: url("./assets/smiley.svg");
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: bottom 40% right 20%;
-  background-attachment: fixed;
-  @media only screen and (max-width: $large) {
-    background-size: 100%;
-    background-position: bottom 30%;
-  }
-  @media only screen and (max-width: $large) and (orientation: landscape) {
-    background-size: 60%;
-    background-position: bottom 40% right 30%;
-  }
-}
-
 ::selection {
   background: $lava-red;
   color: $lava-light;
