@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogPost } from '../../blog-post';
-import { WordpressApiService } from '../../wordpress-api.service';
+import { BlogPost } from './blog-post';
+import { WordpressApiService } from '../wordpress-api.service';
 import { Observable } from 'rxjs';
 
 @Component({

@@ -1,8 +1,8 @@
 @import "./reset.css";
 @import "./variables.scss";
 @import "./assets/fonts/fonts.css";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 html {
   /*-----Prevents iPhone from resizing in landscape mode -----*/
@@ -15,12 +15,12 @@ html {
 
 ::selection {
   background: $lava-red;
-  color: $lava-light;
+  color: $lava-white;
 }
 
 ::-moz-selection {
   background: $lava-red;
-  color: $lava-light;
+  color: $lava-white;
 }
 
 h2 {

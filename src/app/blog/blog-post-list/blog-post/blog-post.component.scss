@@ -1,0 +1,51 @@
+@import '../../../../variables.scss';
+
+h3 {
+  color: $lava-ash;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 56px;
+  margin: .4em 0;
+}
+
+.post {
+  background-color: $lava-white;
+  padding: 2% 6%;
+}
+
+::ng-deep {
+  p {
+    color: $lava-medium-ash;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 1.2em 0;
+  }
+
+}
+
+.date {
+  color: $lava-red;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin: .4em 0;
+  letter-spacing: .4em;
+}
+
+@media only screen and (max-width: $large) {
+  h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .post {
+    padding: 1% 6%;
+  }
+}

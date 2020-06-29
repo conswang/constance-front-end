@@ -1,4 +1,8 @@
-<p>Hello I am a blog post</p>
-<h3>{{blogPost.title.rendered}}</h3>
-<p>{{blogPost.date}}</p>
-<p>{{blogPost.excerpt.rendered}}</p>
+<div class="date">
+  {{ blogPost.date | convertDate }}
+</div>
+<div class="post">
+  <h3>{{ blogPost.title.rendered }}</h3>
+  <hr>
+  <div innerHTML="{{ blogPost.content.rendered }}"></div>
+</div>

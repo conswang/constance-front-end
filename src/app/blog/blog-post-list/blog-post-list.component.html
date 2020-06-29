@@ -1,3 +1,6 @@
-<ng-container *ngFor="let post of (blogPosts$ | async)">
-  <app-blog-post [blogPost]="post"></app-blog-post>
-</ng-container>
+<div>
+  <h2>codeplaining</h2>
+  <ng-container *ngFor="let post of (blogPosts$ | async)">
+    <app-blog-post [blogPost]="post"></app-blog-post>
+  </ng-container>
+</div>
