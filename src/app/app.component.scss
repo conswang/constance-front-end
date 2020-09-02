@@ -1,7 +1,6 @@
 @import '../variables.scss';
 
 .backgroundImage {
-  background-color: $lava-light;
   background-image: url("../assets/smiley.svg");
   height: 100%;
   width: 100%;
@@ -9,6 +8,7 @@
   background-size: 50%;
   background-position: bottom 40% right 20%;
   background-repeat: no-repeat;
+  will-change: transform;
   z-index: -1;
   @media only screen and (max-width: $large) {
     background-size: 100%;

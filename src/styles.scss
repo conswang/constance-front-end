@@ -13,6 +13,10 @@ html {
 /*----------- apply a natural box layout model to all elements --------------*/
 * {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  }
 
+body {
+  background-color: $lava-light;
+}
+
 ::selection {
   background: $lava-red;
   color: $lava-white;

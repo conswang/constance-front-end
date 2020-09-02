@@ -6,6 +6,7 @@ import { LandingComponent } from './landing.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectExcerptComponent } from './projects/project-excerpt/project-excerpt.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ProjectsComponent } from './projects/projects.component';
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
+    ProjectExcerptComponent,
   ],
   imports: [
     CommonModule,
