@@ -16,7 +16,7 @@ export class WordpressApiService {
   getBlogPosts(): Observable<BlogPost[]> {
     return this.http.get<BlogPost[]>(`${this.ROOT_URL}/posts`)
       .pipe(
-        catchError(this.handleError<BlogPost[]>(`getBlogPosts`, []))
+        catchError(this.handleError<BlogPost[]>(`getBlogPosts`, undefined))
       );
   }
 

@@ -1,6 +1,11 @@
 <div>
   <h2>codeplaining</h2>
-  <ng-container *ngFor="let post of (blogPosts$ | async)">
-    <app-blog-post [blogPost]="post"></app-blog-post>
+  <ng-container *ngIf="(blogPosts$ | async); else elseLoading">
+    <ng-container *ngFor="let post of (blogPosts$ | async)">
+      <app-blog-post [blogPost]="post"></app-blog-post>
+    </ng-container>
   </ng-container>
+  <ng-template #elseLoading>
+    <h3>La La La La Loading...</h3>
+  </ng-template>
 </div>

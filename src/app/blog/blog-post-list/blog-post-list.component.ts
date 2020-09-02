@@ -15,6 +15,7 @@ export class BlogPostListComponent implements OnInit {
 
   ngOnInit(): void {
     this.blogPosts$ = this.wordpressApiService.getBlogPosts();
+    this.blogPosts$.subscribe(ans => console.log(ans));
   }
 
 }

@@ -27,10 +27,18 @@ body {
   color: $lava-white;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
   color: $lava-ash;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 81px;
+}
+
+h2 {
   font-weight: 300;
   font-size: 64px;
   line-height: 112px;
@@ -49,6 +57,36 @@ h2 {
   @media only screen and (max-width: $xsmall) {
     font-size: 42px;
   }
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p, li, ul {
+  color: $lava-medium-ash;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 1.2em 0;
+}
+
+ul {
+  list-style: square inside;
 }
 
 a {

@@ -10,22 +10,16 @@ h3 {
   margin: .4em 0;
 }
 
+::ng-deep {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .post {
   background-color: $lava-white;
   padding: 2% 6%;
-}
-
-::ng-deep {
-  p {
-    color: $lava-medium-ash;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    margin: 1.2em 0;
-  }
-
 }
 
 .date {
